@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>random poem</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Random Poem</h1>
+    <h2><%= poemData[0].title %></h2>
+    <h3>by <%= poemData[0].author %></h3>
+    <% poemData[0].lines.forEach(function(line) { %>
+    <p><%= line %></p>
+    <% }); %>
+  </body>
+</html>
